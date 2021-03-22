@@ -29,7 +29,7 @@ O POC PDF Viewer é uma prova de conceito que conecta pessoas à livros de tecno
 
 ## 🔖 Layout
 
-Nos links abaixo você encontra o layout do projeto web e também do mobile. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
+No link abaixo você encontra o layout de inspiração do projeto. Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
 
 - [Layout de Inspiração da POC](https://www.figma.com/file/IHdGRgzDxqBxqCwMSk5txH/POC-PDF-Viewer?node-id=0%3A1)
 
