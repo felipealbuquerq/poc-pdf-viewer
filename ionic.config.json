@@ -1,0 +1,8 @@
+{
+  "name": "POC PDF Viewer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "26dc1a67"
+}
