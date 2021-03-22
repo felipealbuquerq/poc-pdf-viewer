@@ -21,6 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Angular](https://angular.io/)
 - [Ionic 5](https://ionicframework.com/)
 - [ng2-pdf-viewer](https://vadimdez.github.io/ng2-pdf-viewer/)
+- [ngx-pinch-zoom](http://ivylab.space/pinch-zoom/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## 💻 Projeto
