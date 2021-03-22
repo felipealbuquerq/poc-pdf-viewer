@@ -1,0 +1,28 @@
+<div (click)="toggle()" (animationend)="transition()" *ngIf="anim > 0" [ngClass]="anim == 0 ? 'overlay-bg' : (anim == 1 ? 'overlay-bg animation-show' : 'overlay-bg animation-hide')">
+  <div [style]="overlayHeight" [ngClass]="anim == 0 ? 'bottom-panel' : (anim == 1 ? 'bottom-panel animation-slide-in' : 'bottom-panel animation-slide-out')" #bottompanel>
+    <div class="handle"></div>
+    <h1 *ngIf="titulo" class="titulo">{{titulo}}</h1>
+    <div class="items-container">
+      <div class="item-container" *ngFor="let item of items">
+        <div (click)="select(item.index)" (tap)="select(item.index)">
+          <div *ngIf="item?.image" class="item-image">
+            <img class="image" [src]="item?.image" alt="Imagem" />
+          </div>
+          <div class="item-label">{{item.mainLabel}}</div>
+          <div class="item-secondary-label">{{item.secondaryLabel}}</div>
+        </div>
+      </div>
+      <div *ngIf="itemSolo" class="solo-item-container">
+        <div class="solo-item-container-split" (click)="soloSelect(itemSolo)">
+          <div class="item-image">
+            <img class="image" [src]="itemSolo?.image" alt="Imagem" />
+          </div>
+          <div class="text-container">
+            <div class="item-label">{{itemSolo.mainLabel}}</div>
+            <div *ngIf="itemSolo.secondaryLabel" class="item-secondary-label">{{itemSolo.secondaryLabel}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
