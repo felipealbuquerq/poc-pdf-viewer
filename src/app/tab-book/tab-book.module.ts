@@ -8,6 +8,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { TabBookPageRoutingModule } from './tab-book-routing.module';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 import { OverlayPDFBottomComponentModule } from '../overlay-pdf-bottom/overlay-pdf-bottom.component.module';
 
@@ -19,6 +20,7 @@ import { OverlayPDFBottomComponentModule } from '../overlay-pdf-bottom/overlay-p
     ExploreContainerComponentModule,
     TabBookPageRoutingModule,
     PdfViewerModule,
+    PinchZoomModule,
     OverlayPDFBottomComponentModule
   ],
   declarations: [TabBookPage],

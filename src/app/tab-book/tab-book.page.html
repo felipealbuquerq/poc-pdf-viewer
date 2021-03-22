@@ -7,13 +7,14 @@
       <ion-title size="large">PDF Viewer</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <pdf-viewer
-    [fit-to-page]="true"
-    [src]="pdf"
-    [(page)]="page"
-  >
-  </pdf-viewer>
+  <pinch-zoom>
+    <pdf-viewer
+      [fit-to-page]="true"
+      [src]="pdf"
+      [(page)]="page"
+    >
+    </pdf-viewer>
+  </pinch-zoom>
   <overlay-pdf-bottom #seriesOverlay
     #chaptersOverlay
     (selectedItem)="selectChapterByIndex($event)"

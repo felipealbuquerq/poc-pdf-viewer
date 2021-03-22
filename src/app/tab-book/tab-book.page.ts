@@ -336,8 +336,13 @@ export class TabBookPage {
     this.chapter = this.book?.chapters.find(prop => prop.id === id);
     console.log(this.chapter);
 
-    this.pdf = this.chapter.pdf;
-    this.page = this.chapter.page;
+    if (this.chapter.pdf !== this.pdf) {
+      this.pdf = this.chapter.pdf;
+    }
+
+    if (this.chapter.page !== this.page) {
+      this.page = this.chapter.page;
+    }
 
     this.chaptersOverlay.toggle();
   }
