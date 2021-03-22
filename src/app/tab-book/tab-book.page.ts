@@ -12,6 +12,7 @@ export class TabBookPage {
 
   pdf: string = "../../assets/pdf/DotNETFrameworkNotesForProfessionals.pdf";
   page: number = 1;
+  pinchZoom: boolean = false;
 
   book: any = {
     chapters: [
